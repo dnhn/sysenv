@@ -113,6 +113,16 @@ export default function Home() {
           {process.env.VERCEL_GIT_PULL_REQUEST_ID && <td>{process.env.VERCEL_GIT_PULL_REQUEST_ID}</td>}
         </tr>
       </tbody>
+      <tfoot>
+        <tr>
+          <td colSpan={2} className="py-8 px-4">
+            <div className="flex gap-4 items-center justify-center text-sm font-bold">
+              <Link href="https://nhan.dev" target="_blank">nhan.dev</Link>
+              <Link href="https://github.com/dnhn/sysenv" target="_blank">GitHub</Link>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
     </table>
   );
 }
