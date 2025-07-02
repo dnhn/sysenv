@@ -9,7 +9,6 @@ table {
 }
 
 tbody {
-  @apply font-mono;
 }
 
 tr {

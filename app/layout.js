@@ -1,8 +1,9 @@
+import { Geist } from 'next/font/google';
 import './globals.css';
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={geist.className}>
       <body>{children}</body>
     </html>
   );
@@ -17,3 +18,7 @@ export const viewport = {
   colorScheme: 'dark light',
   width: 'device-width',
 };
+
+const geist = Geist({
+  subsets: ['latin'],
+});

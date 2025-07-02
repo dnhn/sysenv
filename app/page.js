@@ -1,10 +1,11 @@
+import { Geist_Mono } from 'next/font/google';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <table>
       <caption className="py-8 px-4">
-        <h1 className="font-serif font-bold text-pretty">
+        <h1 className="font-black text-pretty">
           <Link
             href="https://vercel.com/docs/environment-variables/system-environment-variables"
             target="_blank"
@@ -14,7 +15,7 @@ export default function Home() {
           </Link>
         </h1>
       </caption>
-      <tbody>
+      <tbody className={geistMono.className}>
         <tr>
           <th>VERCEL</th>
           {process.env.VERCEL && <td>{process.env.VERCEL}</td>}
@@ -115,3 +116,7 @@ export default function Home() {
     </table>
   );
 }
+
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+});
