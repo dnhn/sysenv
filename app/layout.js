@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
 
 export const metadata = {
   title: 'sysenv',
-  description: 'System environment variables',
+  description: 'Vercel’s system environment variables',
 };
 
 export const viewport = {
