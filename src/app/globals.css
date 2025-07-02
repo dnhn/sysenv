@@ -10,6 +10,14 @@ table {
 
 tbody {
   @apply font-mono;
+
+  th, td {
+    @apply py-2 px-4;
+  }
+
+  th {
+    @apply text-left;
+  }
 }
 
 tr {
@@ -17,11 +25,11 @@ tr {
 }
 
 th, td {
-  @apply py-2 px-4;
+  @apply border-stone-200 text-xs sm:border dark:border-stone-700;
 }
 
 th {
-  @apply bg-stone-100 text-left;
+  @apply bg-stone-100 dark:bg-stone-800;
 }
 
 td {
