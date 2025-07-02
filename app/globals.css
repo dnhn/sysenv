@@ -22,7 +22,7 @@ tbody {
   }
 
   td {
-    @apply font-light;
+    @apply break-all font-light;
   }
 
   a {
@@ -40,8 +40,4 @@ th, td {
 
 th {
   @apply bg-stone-100 text-left dark:bg-stone-800;
-}
-
-td {
-  @apply break-all;
 }

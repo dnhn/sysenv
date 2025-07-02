@@ -38,11 +38,17 @@ export default function Home() {
         </tr>
         <tr>
           <th>VERCEL_BRANCH_URL</th>
-          {process.env.VERCEL_BRANCH_URL && <td><Link href={`https://${process.env.VERCEL_BRANCH_URL}`}>{process.env.VERCEL_BRANCH_URL}</Link></td>}
+          {process.env.VERCEL_BRANCH_URL && (
+            <td><Link href={`https://${process.env.VERCEL_BRANCH_URL}`}>{process.env.VERCEL_BRANCH_URL}</Link></td>
+          )}
         </tr>
         <tr>
           <th>VERCEL_PROJECT_PRODUCTION_URL</th>
-          {process.env.VERCEL_PROJECT_PRODUCTION_URL && <td><Link href={`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`}>{process.env.VERCEL_PROJECT_PRODUCTION_URL}</Link></td>}
+          {process.env.VERCEL_PROJECT_PRODUCTION_URL && (
+            <td>
+              <Link href={`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`}>{process.env.VERCEL_PROJECT_PRODUCTION_URL}</Link>
+            </td>
+          )}
         </tr>
         <tr>
           <th>VERCEL_REGION</th>
@@ -70,15 +76,31 @@ export default function Home() {
         </tr>
         <tr>
           <th>VERCEL_GIT_PROVIDER</th>
-          {process.env.VERCEL_GIT_PROVIDER && <td><Link href={`https://${process.env.VERCEL_GIT_PROVIDER}.com`}>{process.env.VERCEL_GIT_PROVIDER}</Link></td>}
+          {process.env.VERCEL_GIT_PROVIDER && (
+            <td>
+              <Link href={`https://${process.env.VERCEL_GIT_PROVIDER}.com`} target="_blank">{process.env.VERCEL_GIT_PROVIDER}</Link>
+            </td>
+          )}
         </tr>
         <tr>
           <th>VERCEL_GIT_REPO_SLUG</th>
-          {process.env.VERCEL_GIT_REPO_SLUG && <td><Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`}>{process.env.VERCEL_GIT_REPO_SLUG}</Link></td>}
+          {process.env.VERCEL_GIT_REPO_SLUG && (
+            <td>
+              <Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`} target="_blank">
+                {process.env.VERCEL_GIT_REPO_SLUG}
+              </Link>
+            </td>
+          )}
         </tr>
         <tr>
           <th>VERCEL_GIT_REPO_OWNER</th>
-          {process.env.VERCEL_GIT_REPO_OWNER && <td><Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}`}>{process.env.VERCEL_GIT_REPO_OWNER}</Link></td>}
+          {process.env.VERCEL_GIT_REPO_OWNER && (
+            <td>
+              <Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}`} target="_blank">
+                {process.env.VERCEL_GIT_REPO_OWNER}
+              </Link>
+            </td>
+          )}
         </tr>
         <tr>
           <th>VERCEL_GIT_REPO_ID</th>
@@ -86,11 +108,29 @@ export default function Home() {
         </tr>
         <tr>
           <th>VERCEL_GIT_COMMIT_REF</th>
-          {process.env.VERCEL_GIT_COMMIT_REF && <td><Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/tree/${process.env.VERCEL_GIT_COMMIT_REF}`}>{process.env.VERCEL_GIT_COMMIT_REF}</Link></td>}
+          {process.env.VERCEL_GIT_COMMIT_REF && (
+            <td>
+              <Link
+                href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/tree/${process.env.VERCEL_GIT_COMMIT_REF}`}
+                target="_blank"
+              >
+                {process.env.VERCEL_GIT_COMMIT_REF}
+              </Link>
+            </td>
+          )}
         </tr>
         <tr>
           <th>VERCEL_GIT_COMMIT_SHA</th>
-          {process.env.VERCEL_GIT_COMMIT_SHA && <td><Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/commit/${process.env.VERCEL_GIT_COMMIT_SHA}`}>{process.env.VERCEL_GIT_COMMIT_SHA}</Link></td>}
+          {process.env.VERCEL_GIT_COMMIT_SHA && (
+            <td>
+              <Link
+                href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/commit/${process.env.VERCEL_GIT_COMMIT_SHA}`}
+                target="_blank"
+              >
+                {process.env.VERCEL_GIT_COMMIT_SHA}
+              </Link>
+            </td>
+          )}
         </tr>
         <tr>
           <th>VERCEL_GIT_COMMIT_MESSAGE</th>
