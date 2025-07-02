@@ -20,6 +20,14 @@ tbody {
   th, td {
     @apply py-2 px-4 text-xs;
   }
+
+  td {
+    @apply font-light;
+  }
+
+  a {
+    @apply font-bold;
+  }
 }
 
 tr {
