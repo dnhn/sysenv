@@ -5,7 +5,11 @@ export default function Home() {
     <table>
       <caption className="px-4 py-6">
         <h1 className="font-serif">
-          <Link href="https://vercel.com/docs/environment-variables/system-environment-variables" className="text-2xl">
+          <Link
+            href="https://vercel.com/docs/environment-variables/system-environment-variables"
+            target="_blank"
+            className="text-xl"
+          >
             Vercel’s system environment variables
           </Link>
         </h1>
