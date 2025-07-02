@@ -1,10 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "sysenv",
-  description: "System environment variables",
-};
 
 export default function RootLayout({
   children,
@@ -17,3 +12,12 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: "sysenv",
+  description: "System environment variables",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+};

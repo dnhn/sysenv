@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+html {
+  @apply antialiased;
+}
+
+table {
+  @apply w-full;
+}
+
+tbody {
+  @apply font-mono;
+}
+
+tr {
+  @apply flex-col max-sm:flex;
+}
+
+th, td {
+  @apply py-2 px-4;
+}
+
+th {
+  @apply bg-stone-100 text-left;
+}
+
+td {
+  @apply break-all;
+}
