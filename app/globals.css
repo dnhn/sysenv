@@ -1,7 +1,15 @@
 @import 'tailwindcss';
 
+* {
+  @apply outline-current outline-offset-2 transition-[outline] focus:outline-2;
+}
+
 html {
   @apply antialiased;
+}
+
+a {
+  @apply underline underline-offset-2 hover:no-underline focus:no-underline;
 }
 
 table {
