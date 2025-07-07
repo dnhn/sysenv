@@ -16,142 +16,20 @@ export default function Home() {
         </h1>
       </caption>
       <tbody className={geistMono.className}>
-        <tr>
-          <th>VERCEL</th>
-          {process.env.VERCEL && <td>{process.env.VERCEL}</td>}
-        </tr>
-        <tr>
-          <th>CI</th>
-          {process.env.CI && <td>{process.env.CI}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_ENV</th>
-          {process.env.VERCEL_ENV && <td>{process.env.VERCEL_ENV}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_TARGET_ENV</th>
-          {process.env.VERCEL_TARGET_ENV && <td>{process.env.VERCEL_TARGET_ENV}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_URL</th>
-          {process.env.VERCEL_URL && <td><Link href={`https://${process.env.VERCEL_URL}`}>{process.env.VERCEL_URL}</Link></td>}
-        </tr>
-        <tr>
-          <th>VERCEL_BRANCH_URL</th>
-          {process.env.VERCEL_BRANCH_URL && (
-            <td><Link href={`https://${process.env.VERCEL_BRANCH_URL}`}>{process.env.VERCEL_BRANCH_URL}</Link></td>
-          )}
-        </tr>
-        <tr>
-          <th>VERCEL_PROJECT_PRODUCTION_URL</th>
-          {process.env.VERCEL_PROJECT_PRODUCTION_URL && (
-            <td>
-              <Link href={`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`}>{process.env.VERCEL_PROJECT_PRODUCTION_URL}</Link>
-            </td>
-          )}
-        </tr>
-        <tr>
-          <th>VERCEL_REGION</th>
-          {process.env.VERCEL_REGION && <td>{process.env.VERCEL_REGION}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_DEPLOYMENT_ID</th>
-          {process.env.VERCEL_DEPLOYMENT_ID && <td>{process.env.VERCEL_DEPLOYMENT_ID}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_PROJECT_ID</th>
-          {process.env.VERCEL_PROJECT_ID && <td>{process.env.VERCEL_PROJECT_ID}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_SKEW_PROTECTION_ENABLED</th>
-          {process.env.VERCEL_SKEW_PROTECTION_ENABLED && <td>{process.env.VERCEL_SKEW_PROTECTION_ENABLED}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_AUTOMATION_BYPASS_SECRET</th>
-          {process.env.VERCEL_AUTOMATION_BYPASS_SECRET && <td>{process.env.VERCEL_AUTOMATION_BYPASS_SECRET}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_OIDC_TOKEN</th>
-          {process.env.VERCEL_OIDC_TOKEN && <td>{process.env.VERCEL_OIDC_TOKEN}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_PROVIDER</th>
-          {process.env.VERCEL_GIT_PROVIDER && (
-            <td>
-              <Link href={`https://${process.env.VERCEL_GIT_PROVIDER}.com`} target="_blank">{process.env.VERCEL_GIT_PROVIDER}</Link>
-            </td>
-          )}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_REPO_SLUG</th>
-          {process.env.VERCEL_GIT_REPO_SLUG && (
-            <td>
-              <Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`} target="_blank">
-                {process.env.VERCEL_GIT_REPO_SLUG}
-              </Link>
-            </td>
-          )}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_REPO_OWNER</th>
-          {process.env.VERCEL_GIT_REPO_OWNER && (
-            <td>
-              <Link href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}`} target="_blank">
-                {process.env.VERCEL_GIT_REPO_OWNER}
-              </Link>
-            </td>
-          )}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_REPO_ID</th>
-          {process.env.VERCEL_GIT_REPO_ID && <td>{process.env.VERCEL_GIT_REPO_ID}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_COMMIT_REF</th>
-          {process.env.VERCEL_GIT_COMMIT_REF && (
-            <td>
-              <Link
-                href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/tree/${process.env.VERCEL_GIT_COMMIT_REF}`}
-                target="_blank"
-              >
-                {process.env.VERCEL_GIT_COMMIT_REF}
-              </Link>
-            </td>
-          )}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_COMMIT_SHA</th>
-          {process.env.VERCEL_GIT_COMMIT_SHA && (
-            <td>
-              <Link
-                href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/commit/${process.env.VERCEL_GIT_COMMIT_SHA}`}
-                target="_blank"
-              >
-                {process.env.VERCEL_GIT_COMMIT_SHA}
-              </Link>
-            </td>
-          )}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_COMMIT_MESSAGE</th>
-          {process.env.VERCEL_GIT_COMMIT_MESSAGE && <td>{process.env.VERCEL_GIT_COMMIT_MESSAGE}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_COMMIT_AUTHOR_LOGIN</th>
-          {process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN && <td>{process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_COMMIT_AUTHOR_NAME</th>
-          {process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME && <td>{process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_PREVIOUS_SHA</th>
-          {process.env.VERCEL_GIT_PREVIOUS_SHA && <td>{process.env.VERCEL_GIT_PREVIOUS_SHA}</td>}
-        </tr>
-        <tr>
-          <th>VERCEL_GIT_PULL_REQUEST_ID</th>
-          {process.env.VERCEL_GIT_PULL_REQUEST_ID && <td>{process.env.VERCEL_GIT_PULL_REQUEST_ID}</td>}
-        </tr>
+        {ENV.map((env) => (
+          <tr key={env.name}>
+            <th>{env.name}</th>
+            {env.value && (
+              <td>
+                {env.href ? (
+                  <Link href={env.href} target={env.external ? '_blank' : undefined}>{env.value}</Link>
+                ) : (
+                  env.value
+                )}
+              </td>
+            )}
+          </tr>
+        ))}
       </tbody>
       <tfoot>
         <tr>
@@ -170,3 +48,30 @@ export default function Home() {
 const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
+
+const ENV = [
+  { name: 'VERCEL', value: process.env.VERCEL },
+  { name: 'CI', value: process.env.CI },
+  { name: 'VERCEL_ENV', value: process.env.VERCEL_ENV },
+  { name: 'VERCEL_TARGET_ENV', value: process.env.VERCEL_TARGET_ENV },
+  { href: `https://${process.env.VERCEL_URL}`, name: 'VERCEL_URL', value: process.env.VERCEL_URL },
+  { href: `https://${process.env.VERCEL_BRANCH_URL}`, name: 'VERCEL_BRANCH_URL', value: process.env.VERCEL_BRANCH_URL },
+  { href: `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`, name: 'VERCEL_PROJECT_PRODUCTION_URL', value: process.env.VERCEL_PROJECT_PRODUCTION_URL },
+  { name: 'VERCEL_REGION', value: process.env.VERCEL_REGION },
+  { name: 'VERCEL_DEPLOYMENT_ID', value: process.env.VERCEL_DEPLOYMENT_ID },
+  { name: 'VERCEL_PROJECT_ID', value: process.env.VERCEL_PROJECT_ID },
+  { name: 'VERCEL_SKEW_PROTECTION_ENABLED', value: process.env.VERCEL_SKEW_PROTECTION_ENABLED },
+  { name: 'VERCEL_AUTOMATION_BYPASS_SECRET', value: process.env.VERCEL_AUTOMATION_BYPASS_SECRET },
+  { name: 'VERCEL_OIDC_TOKEN', value: process.env.VERCEL_OIDC_TOKEN },
+  { external: true, href: `https://${process.env.VERCEL_GIT_PROVIDER}.com`, name: 'VERCEL_GIT_PROVIDER', value: process.env.VERCEL_GIT_PROVIDER },
+  { external: true, href: `https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`, name: 'VERCEL_GIT_REPO_SLUG', value: process.env.VERCEL_GIT_REPO_SLUG },
+  { external: true, href: `https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}`, name: 'VERCEL_GIT_REPO_OWNER', value: process.env.VERCEL_GIT_REPO_OWNER },
+  { name: 'VERCEL_GIT_REPO_ID', value: process.env.VERCEL_GIT_REPO_ID },
+  { external: true, href: `https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/tree/${process.env.VERCEL_GIT_COMMIT_REF}`, name: 'VERCEL_GIT_COMMIT_REF', value: process.env.VERCEL_GIT_COMMIT_REF },
+  { external: true, href: `https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/commit/${process.env.VERCEL_GIT_COMMIT_SHA}`, name: 'VERCEL_GIT_COMMIT_SHA', value: process.env.VERCEL_GIT_COMMIT_SHA },
+  { name: 'VERCEL_GIT_COMMIT_MESSAGE', value: process.env.VERCEL_GIT_COMMIT_MESSAGE },
+  { name: 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', value: process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN },
+  { name: 'VERCEL_GIT_COMMIT_AUTHOR_NAME', value: process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME },
+  { name: 'VERCEL_GIT_PREVIOUS_SHA', value: process.env.VERCEL_GIT_PREVIOUS_SHA },
+  { name: 'VERCEL_GIT_PULL_REQUEST_ID', value: process.env.VERCEL_GIT_PULL_REQUEST_ID },
+]
