@@ -72,6 +72,6 @@ const ENV = [
   { name: 'VERCEL_GIT_COMMIT_MESSAGE', value: process.env.VERCEL_GIT_COMMIT_MESSAGE },
   { name: 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', value: process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN },
   { name: 'VERCEL_GIT_COMMIT_AUTHOR_NAME', value: process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME },
-  { name: 'VERCEL_GIT_PREVIOUS_SHA', value: process.env.VERCEL_GIT_PREVIOUS_SHA },
-  { name: 'VERCEL_GIT_PULL_REQUEST_ID', value: process.env.VERCEL_GIT_PULL_REQUEST_ID },
+  { external: true, href: `https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/commit/${process.env.VERCEL_GIT_PREVIOUS_SHA}`, name: 'VERCEL_GIT_PREVIOUS_SHA', value: process.env.VERCEL_GIT_PREVIOUS_SHA },
+  { external: true, href: `https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/pull/${process.env.VERCEL_GIT_PULL_REQUEST_ID}`, name: 'VERCEL_GIT_PULL_REQUEST_ID', value: process.env.VERCEL_GIT_PULL_REQUEST_ID },
 ]
